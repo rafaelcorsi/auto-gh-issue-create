@@ -1,0 +1,26 @@
+milestone:
+  mile0:
+    title: 23/4
+    state: open
+    due_on: '2021-06-16T23:00:01Z'
+
+issues:
+  issue0:
+    Title: Testanto título
+    Milestone: 23/4
+    Body: |
+      Testanto mensagem
+
+      1. item1
+      1. item2
+      1. item3
+
+  issue2:
+    Title: Vaca atolada
+    Milestone: 23/4
+    Body: |
+      Receita:
+
+      1. Mandioca
+      1. Carne porco
+      1. Arroz
