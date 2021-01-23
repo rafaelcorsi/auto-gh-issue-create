@@ -31,13 +31,13 @@ def ghIssueCreeate(issue):
 def ghissueCreateBulk(issues, reposPath):
     os.chdir(reposPath)
     for repo in os.listdir():
-        os.chdir(repo)
-        print('repo: {}'.format(repo))
-        for k, v in issues.items():
-            print('   - criando issue: {}'.format(k))
-            ghIssueCreeate(v)
-        os.chdir('..')
-
+        if is_git_repo(repo):
+            os.chdir(repo)
+            print('repo: {}'.format(repo))
+            for k, v in issues.items():
+                print('   - criando issue: {}'.format(k))
+                ghIssueCreeate(v)
+            os.chdir('..')
 
 def initRepo(repoList, reposPath):
     for repo in repoList:
